@@ -1,0 +1,74 @@
+body{
+    background-color:whitesmoke;
+    color:black;
+    line-height:1.6;
+    font-family: 'segoi UI',roboto, sans-serif;
+}
+
+header{
+    background-color: rgb(3, 30, 98);
+    color: whitesmoke;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: gold;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    color: rgb(3, 30, 98);
+}
+
+h1{
+    border-bottom: 2px solid rgb(3, 30, 98);
+    width: fit-content;
+    padding-bottom: 0.6rem;
+    font-size: 2rem;
+}
+
+main{
+    margin: 2rem;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+
+.about-container,
+.Skills-container,
+.contact-container,
+.Education-container,
+.projects-container,
+.social-Media-container{
+    background-color:#d7b3b3;
+    border-radius: 10px;
+    padding : 2rem;
+    box-shadow: 0 4px 12px black;
+    margin-bottom: 2rem;
+}
