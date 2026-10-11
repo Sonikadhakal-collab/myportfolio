@@ -4,187 +4,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Header and Navigation -->
     <header>
         <div class="header-container">
+
             <div class="logo">
-            <img src="image/logo.png" alt="logo" width="80">
+                <img src="image/logo.jpg" alt="My portfolio logo">
             </div>
-             <div class="nav-bar">
+
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#image-slider-section">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="search-box">
+                <label for="site-search">Search</label>
+                <input type="search" id="site-search"
+                       placeholder="Search">
             </div>
 
-
-
-            <search>
-                <label for="Search">Search</label>
-                <input type="text" placeholder="Search">
-            </search>
-        </header>
+        </div>
+    </header>
 
     <main>
 
-        <section id ="about">
+        <!-- About Section -->
+        <section id="about">
             <div class="about-container">
-            <h1>About Me</h1>
+                <div>
+                    <h1>About Me</h1>
+                    <p>
+                        I am a BIT student passionate about technology,
+                        creativity, and learning new skills.
+                        I am interested in web development, cloud computing,
+                        and data analytics. I enjoy exploring new ideas and
+                        building projects that improve my technical and
+                        creative abilities.
+                    </p>
+                </div>
 
-            <p>
-                I am a BIT student passionate about technology, creativity, and learning new skills.
-                <br>
-                I am interested in web development, cloud computing, and data analytics.
-                <br>
-                I enjoy exploring new ideas and building projects that improve my technical and creative abilities.
-            </p>
-
-            <br>
-
-            <img src="image/profile.jpg" alt="My Profile Photo" width="120">
-           </div>  
+                <img src="image/profile.jpg" alt="My profile photo">
+            </div>
         </section>
-       
 
+        <!-- Education Section -->
         <section id="education">
             <div class="Education-container">
-            <h1>Education</h1>
+                <h2>Education</h2>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>S.N.</th>
-                        <th>Level</th>
-                        <th>Institute</th>
-                        <th>Year</th>
-                        <th>GPA</th>
-                        <th>Grade</th>
-                    </tr>
-                </thead>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.N.</th>
+                            <th>Level</th>
+                            <th>Institute</th>
+                            <th>Year</th>
+                            <th>GPA</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td>1.</td>
-                        <td>Secondary</td>
-                        <td>Shiddhartha Higher Secondary School</td>
-                        <td>2021</td>
-                        <td>3.50</td>
-                        <td>A</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Secondary</td>
+                            <td>Shiddhartha Higher Secondary School</td>
+                            <td>2021</td>
+                            <td>3.50</td>
+                            <td>A</td>
+                        </tr>
 
-                    <tr>
-                        <td>2.</td>
-                        <td>Higher Secondary</td>
-                        <td>Canvas International College</td>
-                        <td>2023</td>
-                        <td>3.00</td>
-                        <td>B+</td>
-                    </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Higher Secondary</td>
+                            <td>Canvas International College</td>
+                            <td>2023</td>
+                            <td>3.00</td>
+                            <td>B+</td>
+                        </tr>
 
-                    <tr>
-                        <td>3.</td>
-                        <td>Bachelor's</td>
-                        <td>MIT</td>
-                        <td>Running</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                            <td>3</td>
+                            <td>Bachelor's</td>
+                            <td>Modern Institute of Technology</td>
+                            <td>Running</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
-   
 
+        <!-- Skills Section -->
         <section id="skills">
             <div class="Skills-container">
-            <h2>My Skills</h2>
-            <d>
-                <dt>Web Development</dt>
-                <dd>Proficient in HTML, CSS, and JavaScript</dd>
-                
-                <dt>Data Analytics</dt>
-                <dd>Experience with Python and SQL</dd>
-            </d>
+                <h2>My Skills</h2>
+
+                <dl>
+                    <dt>Web Development</dt>
+                    <dd>Knowledge of HTML, CSS, and JavaScript.</dd>
+
+                    <dt>Data Analytics</dt>
+                    <dd>Learning Python, SQL, and data analysis.</dd>
+                </dl>
+            </div>
         </section>
 
-
+        <!-- Projects Section -->
         <section id="projects">
             <div class="projects-container">
-            <h2>My Projects</h2>
-            <article>
-                <h3>Project 1</h3>
-                <p>
-                    This is a description of my first project. It showcases my skills in web development and design.
-            </article>
-            <article>
-                <h3>Project 2</h3>
-                <p>
-                    This is a description of my second project. It demonstrates my ability to work with data and analytics.
-                </p>
-            </article>
+                <h2>My Projects</h2>
+
+                <article>
+                    <h3>Project 1: Personal Portfolio</h3>
+                    <p>
+                        This project presents my background, education,
+                        skills, and interests using HTML and CSS.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Project 2: Image Slider</h3>
+                    <p>
+                        This project uses JavaScript to display images
+                        with navigation arrows, clickable dots,
+                        smooth transitions, and automatic sliding.
+                    </p>
+                </article>
             </div>
         </section>
-    </div>
 
-  
+        <!-- Image Slider Section -->
+        <section id="image-slider-section">
+            <div class="slider-container">
+                <h2>My Image Gallery</h2>
+                <p>Explore some of my favorite images.</p>
 
+                <div class="slider"
+                     aria-label="Image gallery"
+                     aria-roledescription="carousel">
 
-    <footer>
+                    <div class="slider-track">
 
+                        <div class="slide">
+                            <img src="image/image1.jpg"
+                                 alt="Beautiful nature landscape">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/image2.jpg"
+                                 alt="Mountain scenery">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/image3.jpg"
+                                 alt="Beautiful travel destination">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/image4.png"
+                                 alt="Nature and scenery">
+                        </div>
+
+                    </div>
+
+                    <button type="button"
+                            class="slider-button prev"
+                            aria-label="Previous image">
+                        &#10094;
+                    </button>
+
+                    <button type="button"
+                            class="slider-button next"
+                            aria-label="Next image">
+                        &#10095;
+                    </button>
+
+                    <div class="slider-dots"
+                         aria-label="Choose an image">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact">
             <div class="contact-container">
-            <h3>Contact Me</h3>
+                <h2>Contact Me</h2>
 
-            <form>
-                <label>Email:</label>
-                <br>
+                <form id="contact-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                           placeholder="Enter your email" required>
 
-                <input type="email" placeholder="Enter your email">
-                <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message"
+                              placeholder="Enter your message"
+                              required></textarea>
 
-                <label>Message:</label>
-                <br>
+                    <button type="submit">Submit</button>
+                </form>
 
-                <textarea placeholder="Enter your message"></textarea>
-                <br>
-
-                <button type="submit" style="background-color: blue; color: white;">
-                    Submit
-                </button>
-            </form>
+                <p id="form-message" aria-live="polite"></p>
             </div>
         </section>
-        </main>
 
+    </main>
 
+    <!-- Footer and Social Media -->
+    <footer>
         <section id="social-media">
             <div class="Social-Media-container">
-            <h2>Find Me ON</h2>
+                <h2>Find Me On</h2>
 
-            <a href="https://www.linkedin.com/feed/" target="_blank">
-                <image src="image/linkdin.jpg" alt="Linkdin" width="80"></image>
-            </a>
+                <a href="https://www.linkedin.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="image/Linkedin.jpg" alt="LinkedIn">
+                </a>
 
-            <a href="https://github.com/Sonikadhakal-collab/myportfolio" target="_blank">
-                <image src="image/github.jpg" alt="Github" width="80"></image>
-            </a>
+                <a href="https://github.com/Sonikadhakal-collab/myportfolio"
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="image/github.jpg" alt="GitHub">
+                </a>
 
-            <a href="https://www.instagram.com/?hl=en" target="_blank">
-                <image src="image/instagram.jpg" alt="Instagram" width="80"></image>
-            </a>
+                <a href="https://www.instagram.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="image/instagram.jpg" alt="Instagram">
+                </a>
             </div>
-        </section>
 
+            <p class="copyright">
+                &copy; 2026 Sonika Dhakal. All rights reserved.
+            </p>
+        </section>
     </footer>
 
 </body>
